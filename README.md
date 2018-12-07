@@ -2,38 +2,26 @@
 
 Этот форк сделан для бэкпорта современного английского учебника https://javascript.info.
 
-## Translations
+Пожалуйста, переводите статьи и делайте PR сюда.
 
-(In alphabetical order):
+Когда закончим, здесь будет новая версия русского учебника.
 
-| Language | Github | Translation leads | Translated (%) | Published |
-|----------|--------|-------------------|-----------------|-----------|
-| Chinese | https://github.com/xitu/javascript-tutorial-zh | @leviding | ![](http://translate-hook.javascript.info/stats/zh.svg?1) | https://zh.javascript.info |
-| Japanese | https://github.com/KenjiI/javascript-tutorial-ja | @KenjiI | ![](http://translate-hook.javascript.info/stats/ja.svg?1) | https://ja.javascript.info |
-| Romanian | https://github.com/lighthousand/javascript-tutorial-ro | @lighthousand | started | - |
-| Russian | https://github.com/iliakan/javascript-tutorial-ru | @iliakan | * | https://learn.javascript.ru |
-| Turkish | https://github.com/sahinyanlik/javascript-tutorial-tr | @sahinyanlik | ![](http://translate-hook.javascript.info/stats/tr.svg?1) | - |
+# Структура
 
+Каждому разделу, статье или задаче соответствует директория.
 
+Эта директория имеет вид `N-url`, где `N` - это номер для сортировки статей и разделов (они упорядочены), а `url` – URL-имя, по которому материал будет доступен.
 
-`*` – the previous version is published in Russian, need to backport/translate the new one from English.
+В директории находится один из файлов:
 
-If you'd like to translate it into your language, please clone the repository, change its name to `javascript-tutorial-...` (by the language) and [create an issue](https://github.com/iliakan/javascript-tutoria-en/issues/new) for me to add you to the list.
+  - `index.md` для раздела
+  - `article.md` для статьи
+  - `task.md` для условия задачи (+там же `solution.md` с решением)
 
-You can edit the text in any editor (markdown-like syntax). The server to run the tutorial locally and see how it looks is at <https://github.com/iliakan/javascript-tutorial-server>.  
+Каждый из этих файлов начинается с `# Заголовка материала`.
 
+Например:
 
-
-## Structure
-
-Every chapter, article or a task has its folder.
-
-The folder is named like `N-url`, where `N` is a number for the sorting purposes and `url` is the URL part with title of the material.
-
-The type of the material is defined by the file inside the folder:
-
-  - `index.md` stands for a chapter
-  - `article.md` stands for an article
-  - `task.md` stands for a task (solution must be provided in `solution.md` file aswell)
-
-Each of these files starts from the `# Main header`.
+  - директория `2-ui/3-event-details` с файлом `index.md` - это раздел сайта "События в деталях", он будет доступен по URL `/event-details`.
+  - директория `2-ui/3-event-details/6-drag-and-drop` с файлом `article.md` содержит статью "Мышь: Drag'n'Drop`, доступную по URL `/drag-and-drop`.
+  - директория `2-ui/3-event-details/6-drag-and-drop/slider` с файлом `task.md` содержит задачу с названием "Слайдер", доступную по адресу `/task/slider`.
