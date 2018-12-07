@@ -1,6 +1,6 @@
-# The JavaScript Tutorial
+# Современный учебник Javascript
 
-This repository hosts the content of the Modern JavaScript Tutorial, published at [https://javascript.info](https://javascript.info).
+Этот форк сделан для бэкпорта современного английского учебника https://javascript.info.
 
 ## Translations
 
